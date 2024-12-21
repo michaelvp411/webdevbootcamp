@@ -1,0 +1,24 @@
+{
+  "name": "WebDevBootcamp Environment",
+  "image": "node:18",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "forwardPorts": [3000]
+}
+
